@@ -1,15 +1,19 @@
 1. Write a Python Program to print "Hello World".
-Sol. print ("Hello World")
+   Sol. print ("Hello World")
  
 2. Write a Python program to do arithmetical operations addition and division.?\n",
-   Sol: a = int(input("enter a number))
-        b = int(input("enter a number))
-        Add = a+b
-        Sub = a-b
-        Div = a//b
-        print(Add)
-        print(Sub)
-        print(Div)
+   Sol: a = int(input("Enter a number: "))  
+        b = int(input("Enter a number: "))  
+
+        Add = a + b
+        Sub = a - b
+        Mul = a * b
+        Div = a // b  
+
+        print("Addition:", Add)  
+        print("Subtraction:", Sub)
+        print("Division:", Div)
+        print("Multiplication:", Mul)
 
 3. Write a Python program to find the area of a triangle?
    Sol: Triangle = 12
