@@ -16,9 +16,9 @@
         print("Multiplication:", Mul)
 
 3. Write a Python program to find the area of a triangle?
-   Sol: Triangle = 12
-       Area_Triangle = 3.72*12*12
-       print(Area_Triangle)
+   Sol: r = int(input("Enter radias of the Triangle : "))
+        a = 3.72*pow(r, 2)
+        print("The area of triangle is : ",a)
 
 4. Write a Python program to swap two variables?
 Sol:
