@@ -1,0 +1,70 @@
+1. Write a Python Program to Check if a Number is Positive, Negative or Zero?
+Sol. # Take input from the user
+     num = float(input("Enter a number: "))  # We use float here to handle decimal input as well
+
+     # Check if the number is positive, negative, or zero
+     if num > 0:
+        print("The number is positive.")
+     elif num < 0:
+        print("The number is negative.")
+     else:
+        print("The number is zero.")
+
+2. Write a Python Program to Check if a Number is Odd or Even?
+Sol.    
+# Take input from the user
+num = int(input("Enter a number: "))
+
+# Check if the number is odd or even
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+
+3. Write a Python Program to Check Leap Year?
+Sol.
+# Take input from the user
+year = int(input("Enter a year: "))
+
+# Check if it's a leap year
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
+
+4. Write a Python Program to Check Prime Number?
+Sol. 
+# Take input from the user
+num = int(input("Enter a number: "))
+
+# Check if the number is prime
+if num > 1:
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            print(num, "is not a prime number.")
+            break
+    else:
+        print(num, "is a prime number.")
+else:
+    print(num, "is not a prime number.")
+
+5. Write a Python Program to Print all Prime Numbers in an Interval of 1-10000?
+Sol.
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num <= 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    i = 5
+    while i * i <= num:
+        if num % i == 0 or num % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+# Print prime numbers in the interval 1-10000
+for num in range(1, 10001):
+    if is_prime(num):
+        print(num, end=" ")
